@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Index</title>
+</head>
+<body>
+
+{% if request.user %}
+    
+    <h3 style="color:#ff008c; margin: 10px">{{request.user.email}}</h3>
+  
+  {% endif %}
+
+<a href="{% url 'signup'%}">Signup</a>
+<a href="{% url 'signin'%}">Signin</a>
+<a href="{% url 'logout'%}">Logout</a>
+</body>
+</html>
